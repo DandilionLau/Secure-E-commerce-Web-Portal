@@ -28,11 +28,15 @@ if (!auth()){
 		<form id="cat_insert" method="POST" action="admin-process.php?action=cat_insert" onsubmit="return false;">
 			<label for="cat_insert_name">Name</label>
 			<div><input id="cat_insert_name" type="text" name="name" required="true" pattern="^[\w\- ]+$" /></div>
-
+			<input type="hidden" name="nonce" value="<?php echo csrf_getNonce($action); ?>"/>
+			
 			<input type="submit" value="Submit" />
 		</form>
+
 		<form id="logout" method="POST" action="auth-process.php?action=logout">
-    		 <input type="submit" value="Logout" />
+			<input type="hidden" name="nonce" value="<?php echo csrf_getNonce($action); ?>"/>
+
+    		<input type="submit" value="Logout" />
 		</form>
 	</fieldset>
 
@@ -45,6 +49,9 @@ if (!auth()){
 		<legend>Editing Category</legend>
 		<form id="cat_edit" method="POST" action="admin-process.php?action=cat_edit" onsubmit="return false;">
 			<label for="cat_edit_name">Name</label>
+
+			<input type="hidden" name="nonce" value="<?php echo csrf_getNonce($action); ?>"/>
+
 			<div><input id="cat_edit_name" type="text" name="name" required="true" pattern="^[\w\- ]+$" /></div>
 			<input type="hidden" id="cat_edit_catid" name="catid" />
 			<input type="submit" value="Submit" /> <input type="button" id="cat_edit_cancel" value="Cancel" />
@@ -56,6 +63,8 @@ if (!auth()){
 	<fieldset>
 		<legend>New Product</legend>
 		<form id="prod_insert" method="POST" action="admin-process.php?action=prod_insert" enctype="multipart/form-data">
+			<input type="hidden" name="nonce" value="<?php echo csrf_getNonce($action); ?>"/>
+
 			<label for="prod_insert_catid">Category *</label>
 			<div><select id="prod_insert_catid" name="catid"></select></div>
 
@@ -125,14 +134,22 @@ if (!auth()){
 <script type="text/javascript" src="incl/myLib.js"></script>
 <script type="text/javascript">
 
-
-function updateTrans(){
-	
-}
-
 (function(){
 
-
+	function updateTrans(){
+		myLib.get({action:'trans_fetch'}, function(json){
+				// loop over the server response json
+				//   the expected format (as shown in Firebug):
+				
+				//orderItems.push('<tr><th width="70">Order ID</th><th width="400">Digest</th><th width="200">Salt</th><th width="200">Transaction ID</th></tr>');
+				for (var orderItems = [], i = 0, order; order = json[i]; i++) {
+					orderItems.push('<tr><th width="70">',parseInt(order.oid),'</th><th width="400">',order.digest.escapeHTML(),'</th><th width="200">',order.salt.escapeHTML(),'</th><th width="200">',order.tid.escapeHTML(),'</th></tr>');
+				}
+				el('transTable').innerHTML = orderItems.join('');
+				//alert(orderItems);
+			});
+	}
+	updateTrans();
 
 	function updateUI() {
 		myLib.get({action:'cat_fetchall'}, function(json){
@@ -180,9 +197,9 @@ function updateTrans(){
 
 		//handle the click on the category name
 		} else {
-			el('prod_insert_catid').value = id;
+			//el('prod_insert_catid').value = id;
 			// populate the product list or navigate to admin.php?catid=<id>
-			el('productList').innerHTML = '<li> Product 1 of "' + name + '" [Edit] [Delete]</li><li> Product 2 of "' + name + '" [Edit] [Delete]</li>';
+			//el('productList').innerHTML = '<li> Product 1 of "' + name + '" [Edit] [Delete]</li><li> Product 2 of "' + name + '" [Edit] [Delete]</li>';
 		}
 	}
 

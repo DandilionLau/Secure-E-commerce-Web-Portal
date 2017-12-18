@@ -1,12 +1,10 @@
-### IERG4210 17-18 Fall
+## IERG4210 17-18 Fall
 
--------
-
-##### LIU Yicun 1155092202
+#### LIU Yicun 1155092202
 
 <br></br>
 
-##### Extensions:
+####Extensions:
 
 - All cookies are configured with Secure and HttpOnly flags
 
@@ -27,7 +25,7 @@
 
 <br></br>
 
-##### Screenshot
+####Screenshot
 
 ![1](screenshot/1.png)
 

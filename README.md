@@ -1,6 +1,6 @@
-### IERG 4210 17-18 Fall
+### IERG4210 17-18 Fall
 
-#####LIU Yicun 1155092202
+LIU Yicun 1155092202
 
 
 
@@ -29,7 +29,7 @@
 
 ![1](screenshot/1.png)
 
-![2](/Users/stanley/Git/IERG4210_2017/screenshot/2.png)
+![2](screenshot/2.png)
 
-![3](/Users/stanley/Git/IERG4210_2017/screenshot/3.png)
+![3](screenshot/3.png)
 

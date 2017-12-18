@@ -1,11 +1,18 @@
 ## IERG4210 17-18 Fall
 
+<<<<<<< HEAD
 ---
 
 #### LIU Yicun 1155092202
 
 <br></br>
 
+=======
+#### LIU Yicun 1155092202
+
+<br></br>
+
+>>>>>>> phase6
 #### Extensions:
 
 - All cookies are configured with Secure and HttpOnly flags
@@ -27,7 +34,11 @@
 
 <br></br>
 
+<<<<<<< HEAD
 ####Screenshot
+=======
+#### Screenshot
+>>>>>>> phase6
 
 ![1](screenshot/1.png)
 

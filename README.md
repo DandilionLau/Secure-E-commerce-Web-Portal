@@ -4,7 +4,7 @@ LIU Yicun 1155092202
 
 
 
-#####Extensions:
+##### Extensions:
 
 - All cookies are configured with Secure and HttpOnly flags
 
@@ -20,10 +20,10 @@ LIU Yicun 1155092202
 - Supporting password change
 
   - Validate the current user
-
   - Logout after changing password
 
-    ​
+
+
 
 ##### Screenshot
 

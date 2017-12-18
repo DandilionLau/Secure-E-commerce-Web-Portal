@@ -1,8 +1,10 @@
 ### IERG4210 17-18 Fall
 
-LIU Yicun 1155092202
+-------
 
+##### LIU Yicun 1155092202
 
+<br></br>
 
 ##### Extensions:
 
@@ -23,7 +25,7 @@ LIU Yicun 1155092202
   - Logout after changing password
 
 
-
+<br></br>
 
 ##### Screenshot
 

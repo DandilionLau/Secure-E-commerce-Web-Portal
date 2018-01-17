@@ -1,6 +1,6 @@
 ## E-commerce Secure Web Portal
 
-####IERG4210 Course Project 
+#### IERG4210 Course Project 
 
 > This is the course project of IERG4210 Web Programming and Security, which aims to build a secure e-commerce website from scratch. The design and implementation of this web portal has both consideration for functionality and security. 
 

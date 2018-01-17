@@ -46,22 +46,16 @@
 
 #### Extensions:
 
-- All cookies are configured with Secure and HttpOnly flags
-
-- Adopting AJAX to reduce rendering time of the home page
-
-- Supporting secure password reset for user
-
-  - A page for requesting password reset through email
-  - Validate email and generate one-time nonce
-  - Send nonce through email by url rewriting
-  - Only the person receiving his nonce can change his password
-
-- Supporting password change
-
-  - Validate the current user
-  - Logout after changing password
-
+* All cookies are configured with Secure and HttpOnly flags
+* Adopting AJAX to reduce rendering time of the home page
+* Supporting secure password reset for user
+  * A page for requesting password reset through email
+  * Validate email and generate one-time nonce
+  * Send nonce through email by url rewriting
+  * Only the person receiving his nonce can change his password
+* Supporting password change
+  * Validate the current user
+  * Logout after changing password
 
 #### Screenshots:
 

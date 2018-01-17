@@ -1,4 +1,4 @@
-## E-commerce Secure Web Portal
+## Secure E-commerce Web Portal
 
 #### IERG4210 Course Project 
 

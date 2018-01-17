@@ -2,9 +2,7 @@
 
 ####IERG4210 Course Project 
 
-<br></br>
-
-This is the course project of IERG4210 Web Programming and Security, which aims to build a secure e-commerce website from scratch. The design and implementation of this web portal has both consideration for functionality and security. 
+> This is the course project of IERG4210 Web Programming and Security, which aims to build a secure e-commerce website from scratch. The design and implementation of this web portal has both consideration for functionality and security. 
 
 > Check the online demo at: [SonnaTrack Store](http://s56.ierg4210.ie.cuhk.edu.hk)
 
@@ -38,7 +36,7 @@ This is the course project of IERG4210 Web Programming and Security, which aims 
   * IPN listener and two-steps validation in the server side
   * Transaction records is available for the admin and users
 
-####Components:
+#### Components:
 
 * Main page (header, product overview, categorical navigator, shopping cart)
 * Product display page (detailed info, add to cart)

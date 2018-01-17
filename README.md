@@ -63,8 +63,6 @@
   - Logout after changing password
 
 
-<br></br>
-
 #### Screenshots:
 
 ![Main Page](screenshot/1.png)

@@ -1,3 +1,0 @@
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^http://s56.ierg4210.ie.cuhk.edu.hk [NC]
-RewriteRule ^(.*) https://secure.s56.ierg4210.ie.cuhk.edu.hk/Phase5/index.php [L]

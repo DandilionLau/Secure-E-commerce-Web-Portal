@@ -4,7 +4,7 @@
 
 > This is the course project of IERG4210 Web Programming and Security, which aims to build a secure e-commerce website from scratch. The design and implementation of this web portal has both consideration for functionality and security. 
 
-> Check the online demo at: [SonnaTrack Store](http://s56.ierg4210.ie.cuhk.edu.hk)
+> Check the online demo at: [SonnaTrack Store](https://ec2-52-196-12-38.ap-northeast-1.compute.amazonaws.com/index.php)
 
 #### Features:
 
